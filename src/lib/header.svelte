@@ -1,14 +1,12 @@
-<script>
+<script context="module">
+  import SlidingMenu from "$lib/sliding_menu.svelte";
   import { page } from "$app/state";
-  //var col = document.getElementById("home");
-  //col.style.border = "red";
-  if (5 > 0) {
-    console.log(page.url.pathname);
-  }
+
+  let menu;
 </script>
 
 <nav>
-  <div id="nav-menu"></div>
+  <div id="nav-menu" on:click={menu.OpenSlidingMenu}></div>
   <div id="nav-items">
     <div id="nav-links">
       <a id="home" class="nav-link" href="/">Home</a>
@@ -27,6 +25,9 @@
   </div>
 </nav>
 <div id="navigation"></div>
+<SlidingMenu bind:this={menu}>
+</SlidingMenu>
+
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
@@ -169,13 +170,16 @@
   @media only screen and (min-width: 360px) and (max-width: 720px) {
     #nav-menu {
       visibility: visible;
-      position: fixed;
     }
 
     #nav-items {
       visibility: hidden;
       margin: 0px;
       padding: 0px;
+    }
+
+    #sliding-menu {
+    visibility: visible;
     }
   }
 
@@ -191,6 +195,10 @@
       min-width: 360px;
       width: 100%;
       height: 70px;
+    }
+
+    #sliding-menu {
+    visibility: hidden;
     }
   }
 </style>
