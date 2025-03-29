@@ -25,9 +25,7 @@
   </div>
 </nav>
 <div id="navigation"></div>
-<SlidingMenu bind:this={menu}>
-</SlidingMenu>
-
+<SlidingMenu bind:this={menu}></SlidingMenu>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
@@ -45,7 +43,7 @@
   #nav-items {
     display: flex;
     width: 33%;
-    padding-left: 5%;
+    padding-left: 4%;
   }
 
   #nav-menu {
@@ -57,6 +55,10 @@
     margin-left: 5%;
     background-size: cover;
     background-image: url(../img/menu-svgrepo-com.svg);
+  }
+
+  #nav-menu-links {
+    width: 100%;
   }
 
   #nav-links {
@@ -179,11 +181,11 @@
     }
 
     #sliding-menu {
-    visibility: visible;
+      visibility: visible;
     }
   }
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (min-width: 721px) {
     #nav-menu {
       visibility: hidden;
       position: fixed;
@@ -198,7 +200,7 @@
     }
 
     #sliding-menu {
-    visibility: hidden;
+      visibility: hidden;
     }
   }
 </style>

@@ -65,10 +65,12 @@
   @media only screen and (min-width: 360px) and (max-width: 720px) {
     #product-image {
       position: relative;
-      grid-column: 2/ 12;
+      grid-column: 1/ 13;
       grid-row: 2/ 4;
       background-color: red;
       min-height: 500px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     #product-details {
