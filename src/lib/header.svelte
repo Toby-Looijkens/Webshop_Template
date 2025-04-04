@@ -10,18 +10,18 @@
   <div id="nav-items">
     <div id="nav-links">
       <a id="home" class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="/">Products</a>
+      <!--<a class="nav-link" href="/">Products</a>-->
       <a class="nav-link" href="/Contact">Contact</a>
-      <a class="nav-link" href="/">About us</a>
+      <a class="nav-link" href="/AboutUs">About us</a>
     </div>
   </div>
   <div id="brand">
     <a id="brand-name">Webshop</a>
   </div>
   <div id="utilities">
-    <div id="search"></div>
+    <!--<div id="search"></div>
     <div id="login"></div>
-    <div id="shopping-cart"></div>
+    <div id="shopping-cart"></div> -->
   </div>
 </nav>
 <div id="navigation"></div>
@@ -30,7 +30,7 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+ 
   nav {
     display: flex;
     min-width: 320px;
@@ -169,7 +169,7 @@
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 360px) and (max-width: 720px) {
+  @media only screen and (min-width: 360px) and (max-width: 730px) {
     #nav-menu {
       visibility: visible;
     }
@@ -185,7 +185,7 @@
     }
   }
 
-  @media only screen and (min-width: 721px) {
+  @media only screen and (min-width: 731px) {
     #nav-menu {
       visibility: hidden;
       position: fixed;
