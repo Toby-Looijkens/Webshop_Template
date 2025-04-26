@@ -10,13 +10,12 @@
   <div id="nav-items">
     <div id="nav-links">
       <a id="home" class="nav-link" href="/">Home</a>
-      <!--<a class="nav-link" href="/">Products</a>-->
-      <a class="nav-link" href="/Contact">Contact</a>
-      <a class="nav-link" href="/AboutUs">About us</a>
+      <a class="nav-link" href="/products">Products</a>
+      <a class="nav-link" href="/contact">Contact</a>
     </div>
   </div>
   <div id="brand">
-    <a id="brand-name">Webshop</a>
+    <a id="brand-name">Donna's Yarniverse</a>
   </div>
   <div id="utilities">
     <!--<div id="search"></div>
@@ -42,7 +41,7 @@
 
   #nav-items {
     display: flex;
-    width: 33%;
+    width: 22%;
     padding-left: 4%;
   }
 
@@ -87,7 +86,7 @@
 
   a:hover {
     font-weight: 700;
-    border-bottom: 2px solid #59c29f;
+    border-bottom: 2px solid #fddbff;
   }
 
   #brand {
@@ -96,7 +95,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 56%;
   }
 
   #brand-name {
@@ -105,7 +104,7 @@
     margin: 0px;
     text-align: center;
     border: none;
-    font-size: 32px;
+    font-size: 150%;
   }
 
   #brand-name:hover {
@@ -115,7 +114,7 @@
   #utilities {
     display: flex;
     justify-content: right;
-    width: 34%;
+    width: 22%;
     margin-right: 5%;
   }
 
@@ -169,7 +168,7 @@
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 360px) and (max-width: 730px) {
+  @media only screen and (max-width: 730px) {
     #nav-menu {
       visibility: visible;
     }

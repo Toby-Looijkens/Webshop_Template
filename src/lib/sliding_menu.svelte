@@ -29,7 +29,7 @@
     </div>
     <div id="nav-menu-links">
       <a id="home" class="nav-link" href="/">Home</a>
-      <!--<a class="nav-link" href="/Products">Products</a>-->
+      <a class="nav-link" href="/Products">Products</a>
       <a class="nav-link" href="/Contact">Contact</a>
       <a class="nav-link" href="/AboutUs">About us</a>
     </div>

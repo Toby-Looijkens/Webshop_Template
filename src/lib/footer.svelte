@@ -8,7 +8,7 @@
     </div>
   </div>
   <div id="copyright">
-    <p>&copy; 2024 Toby Looijkens</p>
+    <p>website made by Toby Looijkens-2025</p>
   </div>
 </div>
 
@@ -43,10 +43,5 @@
     margin-top: 2px;
     margin-bottom: 2px;
     color: #5f5f5f;
-  }
-  @media only screen and (min-width: 560px) {
-  }
-
-  @media only screen and (min-width: 360px) {
   }
 </style>

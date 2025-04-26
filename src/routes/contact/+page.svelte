@@ -24,6 +24,7 @@
     background-image: url(../img/pexels-anete-lusina-4792079.jpg);
     background-size: cover;
   }
+  
   #content {
     padding-top: 20px;
     padding-bottom: 20px;
