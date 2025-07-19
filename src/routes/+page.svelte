@@ -1,14 +1,12 @@
 <script type="text/javascript">
-
 </script>
 
 <div id="main">
-  <div id="banner">
-  </div>
+  <div id="banner"></div>
   <div id="content">
-    <div id='product-component-1743801989918'></div>
-    </div>
+    <div id="product-component-1743801989918"></div>
   </div>
+</div>
 
 <style>
   #main {
@@ -24,6 +22,7 @@
     background-image: url(../img/pexels-anete-lusina-4792079.jpg);
     background-size: cover;
   }
+
   #content {
     padding-top: 20px;
     padding-bottom: 20px;

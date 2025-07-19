@@ -1,20 +1,30 @@
 <script lang="ts">
   import { Product } from "$lib/models/Product";
-  import {Color} from "$lib/models/Color";
-  
-  export let product:Product;
+  import { Color } from "$lib/models/Color";
+
+  export let product: Product;
+
+  function SwitchImage(ID) {
+    var mainImage = document.getElementById("main-image");
+    mainImage.style.backgroundColor = "blue";
+  }
 </script>
 
 <div id="main">
   <div id="content">
     <div id="image-gallery">
       <div id="main-image">
-        <div id="left-arrow" class="clicker"></div>
+        <div id="left-arrow" class="clicker" onclick={SwitchImage}></div>
         <div id="right-arrow" class="clicker"></div>
       </div>
       <div id="image-slide">
         <div id="left-arrow-slide" class="clicker"></div>
         <div id="right-arrow-slide" class="clicker"></div>
+        <div>
+          <div
+            style="heigth: 90%; background-image: url(https://picsum.photos/200); background-size: cover;"
+          ></div>
+        </div>
       </div>
     </div>
     <div id="product-details">
@@ -22,6 +32,7 @@
     </div>
   </div>
 </div>
+
 <style>
   #main {
     display: grid;
@@ -84,6 +95,7 @@
     background-color: gray;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   #left-arrow-slide {

@@ -1,13 +1,17 @@
 <script lang="ts">
   import { Product } from "$lib/models/Product";
-  export let product:Product;
+  export let product: Product;
 </script>
 
 <div id="card">
   <div id="image"></div>
-  <h2> {product.name} </h2>
+  <h2>{product.name}</h2>
   <div id="buy-info">
-    <h3>€ {parseFloat((product.price / 100 * (100 - product.discount)).toFixed(2)) }</h3>
+    <h3>
+      € {parseFloat(
+        ((product.price / 100) * (100 - product.discount)).toFixed(2),
+      )}
+    </h3>
     <button id="go-to-page">details</button>
   </div>
 </div>
@@ -42,7 +46,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-  } 
+  }
 
   h2 {
     text-align: center;
@@ -71,11 +75,11 @@
     border-radius: 5px;
     justify-self: center;
     align-self: center;
-    background-color: #fddbff;
+    background-color: #f7c8eb;
     border: none;
   }
 
   button:hover {
-    background-color: #fccbff;
+    background-color: #ee99f2;
   }
 </style>

@@ -23,7 +23,7 @@
   <div id="menu">
     <div id="top-bar">
       <div id="brand">
-        <a id="brand-name">Webshop</a>
+        <a id="brand-name">Donna's Yarniverse</a>
       </div>
       <div id="close-button" onclick={OpenSlidingMenu}></div>
     </div>
@@ -56,8 +56,8 @@
     z-index: 3;
     width: 300px;
     height: 100vh;
-    background-color: rgb(250, 250, 250);
-    border-right: 5px solid #59c29f;
+    background-color: #f4d3bb;
+    border-right: 5px solid #ee99f2;
   }
 
   #non-menu {
